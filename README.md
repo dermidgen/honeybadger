@@ -38,9 +38,22 @@ docker run honeybadger/honeybadger:latest
 You can also run a headless version of the HoneyBadger Service engine within your existing stack. The Service engine provides the scheduled running of ETL solutions you have configured via either the admin or directly through JSON configs stored in CouchDB.
 
 See [`honeybadger-service`](https://github.com/dermidgen/honeybadger-service),
-  core Node.js services, workers and scheduling for automated ETL solutions
+ core Node.js services, workers and scheduling for automated ETL solutions.
+
+### In Your Own Application
+HoneyBadger ETL libraries are nicely packaged for doing some low-level ETL within your own applications. You can directly consume the npm packages to provide simple ETL workflows to your application with robust support for various sources, transforms.
+
+[`honeybadger-etl`](https://github.com/dermidgen/honeybadger-etl),
+ independent libraries for implementing ETL in Node.js Streams.
 
 ## Getting Started
+If you are wanting to run the complete solution to start your ETL workloads, you'll want to use the docker container approach. To make this extremely simple, this meta-package provides a method for automatically running CouchDB in a docker container, and firing up the HoneyBadger stack in another container. From this package, simply run:
+
+```
+npm start
+```
+
+_**Note* you must have docker installed properly._
 
 ### Examples
 

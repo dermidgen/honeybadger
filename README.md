@@ -52,7 +52,7 @@ HoneyBadger ETL libraries are nicely packaged for doing some low-level ETL withi
 If you are wanting to run the complete solution to start your ETL workloads, you'll want to use the docker container approach. To make this extremely simple, this meta-package provides a method for automatically running CouchDB in a docker container, and firing up the HoneyBadger stack in another container. From this package, simply run:
 
 ```
-npm start
+npm run honeybadger
 ```
 
 _**Note* you must have docker installed properly._
@@ -63,6 +63,18 @@ _**Note* you must have docker installed properly._
 
 Contributions are welcomed from the greater community via GitHub pull request. For questions or help contributing
 please create an issue.
+
+## Dependencies
+You must have CouchDB installed and running locally. This is pretty easy to do. Any local development or locally running stack will require a local CouchDB.
+
+## Running Stack for Local Development
+This package is a meta-package and is not where actual development is done. However, you can fire up the stack locally from this package to see it running before you start cloning the other repos.
+
+```
+npm start
+```
+
+You should be able to browse to [http://localhost:8090/admin] and see the HoneyBadger Admin Console.
 
 ## Maintainer(s)
 

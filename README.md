@@ -28,11 +28,13 @@ The `honeybadger` package is itself split into 3 packages:
 ## Usage
 
 ### Whole Stack from Docker
-For convenience you can run the HoneyBadger stack locally or in production via Docker.
+For convenience you can run the HoneyBadger stack locally or in production via Docker. Work is being done to run/scale in Kubernetes for large scale production deployments.
 
 ```
 docker run honeybadger/honeybadger:latest
 ```
+
+_Note: See [Getting Started](#getting-started) - this will not run CouchDB_
 
 ### In Your Own Services Stack
 You can also run a headless version of the HoneyBadger Service engine within your existing stack. The Service engine provides the scheduled running of ETL solutions you have configured via either the admin or directly through JSON configs stored in CouchDB.

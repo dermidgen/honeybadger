@@ -5,8 +5,7 @@
   "main": "honeybadger.js",
   "scripts": {
     "start": "DEBUG=HoneyBadger* node honeybadger.js",
-    "test": "mocha test/index",
-    "dev": "DEBUG=HoneyBadger* nodemon -q honeybadger"
+    "test": "DEBUG=HoneyBadger* nodemon -q honeybadger"
   },
   "repository": {
     "type": "git",

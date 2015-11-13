@@ -25,6 +25,7 @@
     "mysql"
   ],
   "author": "Danny Graham",
+  "readme": "README.me",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dermidgen/honeybadger/issues"

@@ -10,6 +10,7 @@ RUN mkdir -p $WORKDIR
 WORKDIR ${WORKDIR}
 
 COPY package.json package.json
+COPY honeybadger.js honeybadger.js
 RUN npm install
 
 CMD ["npm", "start"]
